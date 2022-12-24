@@ -3,22 +3,32 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>uHost</title>
 		<link rel="shortcut icon" href="favicon.png" />
 		<link
 			href="https://fonts.googleapis.com/css?family=Montserrat:400,700"
 			rel="stylesheet"
 		/>
-		<link rel="stylesheet" href="../shared.css" />
+		<link rel="stylesheet " href="../shared.css" />
 		<link rel="stylesheet" href="packages.css" />
 	</head>
 
 	<body>
+		<div class="backdrop"></div>
 		<div class="background"></div>
 		<header class="main-header">
 			<div>
+				<button class="toggle-button">
+					<span class="toggle-button__bar"></span>
+					<span class="toggle-button__bar"></span>
+					<span class="toggle-button__bar"></span>
+				</button>
 				<a href="../index.html" class="main-header__brand">
-					<img src="../images/uhost-icon.png" />
+					<img
+						src="../images/uhost-icon.png"
+						alt="uHost - Your favorite hosting company"
+					/>
 				</a>
 			</div>
 			<nav class="main-nav">
@@ -35,6 +45,19 @@
 				</ul>
 			</nav>
 		</header>
+		<nav class="mobile-nav">
+			<ul class="mobile-nav__items">
+				<li class="mobile-nav__item">
+					<a href="index.html">Packages</a>
+				</li>
+				<li class="mobile-nav__item">
+					<a href="../customers/index.html">Customers</a>
+				</li>
+				<li class="mobile-nav__item mobile-nav__item--cta">
+					<a href="start-hosting/index.html">Start Hosting</a>
+				</li>
+			</ul>
+		</nav>
 		<main>
 			<section class="package" id="plus">
 				<a href="#">
@@ -84,5 +107,6 @@
 				</ul>
 			</nav>
 		</footer>
+		<script src="../shared.js"></script>
 	</body>
 </html>
